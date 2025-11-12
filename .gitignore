@@ -1,0 +1,36 @@
+# IDE / Editor folders
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node / Build (if you ever add JS)
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Netlify / Vercel (if used)
+.netlify/
+.vercel/
+
+# Keep your HTML, CSS, images
+!*.html
+!*.css
+!*.js
+!*.png
+!*.jpg
+!*.svg
+!*.ico
