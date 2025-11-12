@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AWS Guide - InfraHub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; }
+    .content-section { padding: 40px 0; }
+    .source { font-size: 0.85rem; color: #666; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV (SAME AS index.html) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">InfraHub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Cloud & Hyperscalers</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="hyperscalers.html">Overview</a></li>
+              <li><a class="dropdown-item" href="hyperscalers-aws.html">AWS</a></li>
+              <li><a class="dropdown-item" href="hyperscalers-azure.html">Azure</a></li>
+              <li><a class="dropdown-item" href="hyperscalers-gcp.html">GCP</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="os.html">Operating Systems</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Automation & DevOps</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="automation-iac.html">IaC</a></li>
+              <li><a class="dropdown-item" href="automation-ansible.html">Ansible</a></li>
+              <li><a class="dropdown-item" href="automation-cicd.html">CI/CD</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <section class="content-section">
+    <div class="container">
+      <h1>Introduction to AWS Cloud Services</h1>
+      <p class="lead">
+        This document provides a high-level overview of cloud computing, the role of hyperscalers, and specifically Amazon Web Services (AWS). It also includes a step-by-step guide on how to sign up for an AWS account. The content is designed to be introductory, helping beginners understand the basics.
+      </p>
+
+      <hr>
+
+      <h2>What is Cloud Computing?</h2>
+      <p>
+        Cloud computing is the on-demand delivery of IT resources such as computing power, storage, databases, and software over the internet, typically on a pay-as-you-go basis. Instead of owning and maintaining physical hardware or data centers, businesses and individuals can access these resources from cloud providers. This model offers flexibility, scalability, cost savings, and faster innovation by allowing users to scale resources up or down as needed without upfront capital expenses.
+      </p>
+      <p><strong>Key benefits include:</strong></p>
+      <ul>
+        <li><strong>Cost Efficiency:</strong> Pay only for what you use.</li>
+        <li><strong>Scalability:</strong> Easily handle varying workloads.</li>
+        <li><strong>Global Accessibility:</strong> Access resources from anywhere.</li>
+        <li><strong>Reliability:</strong> Built-in redundancy and disaster recovery.</li>
+      </ul>
+      <p class="source">
+        <a href="https://platinumdatarecovery.com" target="_blank">platinumdatarecovery.com</a> – What is cloud? Cloud computing
+      </p>
+
+      <hr>
+
+      <h2>The Role of Hyperscalers in Cloud Computing</h2>
+      <p>
+        Hyperscalers are large-scale cloud service providers that operate massive data centers worldwide, offering extensive cloud infrastructure and services. Examples include AWS, Microsoft Azure, and Google Cloud Platform. The primary point of hyperscalers is to provide virtually unlimited scalability, enabling organizations to grow their IT infrastructure rapidly without the limitations of traditional on-premises setups.
+      </p>
+      <p>They achieve this through:</p>
+      <ul>
+        <li><strong>Massive Infrastructure:</strong> Thousands of servers across global regions for low-latency access.</li>
+        <li><strong>Broad Service Portfolio:</strong> From basic storage to advanced AI and machine learning tools.</li>
+        <li><strong>Economies of Scale:</strong> Lower costs due to high-volume operations.</li>
+        <li><strong>Innovation and Security:</strong> Continuous updates with cutting-edge features and robust security measures.</li>
+      </ul>
+      <p>
+        Using hyperscalers allows businesses to focus on core activities rather than managing hardware, leading to faster time-to-market and competitive advantages.
+      </p>
+      <p class="source">
+        <a href="https://www.solarwinds.com" target="_blank">solarwinds.com</a> – Hyperscalers: The Complete Guide to What, Why and How
+      </p>
+
+      <hr>
+
+      <h2>Overview of AWS Cloud Services</h2>
+      <p>
+        Amazon Web Services (AWS) is the world's most comprehensive cloud platform, offering over 200 fully featured services from data centers globally. It provides tools for computing, storage, databases, analytics, machine learning, and more, all with high security, reliability, and performance.
+      </p>
+      <p><strong>High-level categories of AWS services include:</strong></p>
+      <ul>
+        <li><strong>Compute:</strong> Services like EC2 (virtual servers) and Lambda (serverless computing).</li>
+        <li><strong>Storage:</strong> S3 for object storage and EBS for block storage.</li>
+        <li><strong>Databases:</strong> RDS for managed relational databases and DynamoDB for NoSQL.</li>
+        <li><strong>Networking:</strong> VPC for virtual private clouds and Route 53 for DNS.</li>
+        <li><strong>Machine Learning:</strong> SageMaker for building and deploying ML models.</li>
+        <li><strong>Security and Management:</strong> IAM for access control and CloudWatch for monitoring.</li>
+      </ul>
+      <p>
+        AWS emphasizes innovation, such as being the first with cloud-native services for compute and machine learning, and offers the broadest global infrastructure with 120 Availability Zones in 38 regions.
+      </p>
+      <p class="source">
+        <a href="https://www.youtube.com" target="_blank">youtube.com</a> – Intro to AWS - The Most Important Services To Learn
+      </p>
+
+      <hr>
+
+      <h2>How to Sign Up for an AWS Account</h2>
+      <p>
+        Creating an AWS account is straightforward and free, though you'll need to provide payment information for any usage beyond the free tier. Here's a step-by-step guide:
+      </p>
+      <ol>
+        <li><strong>Visit the AWS Website:</strong> Go to <a href="https://aws.amazon.com" target="_blank">aws.amazon.com</a> and click on "Create an AWS Account" in the top right corner.</li>
+        <li><strong>Enter Your Email and Account Details:</strong> Provide your email address, create a password, and choose a unique AWS account name.</li>
+        <li><strong>Select Account Type:</strong> Choose between a professional (business) or personal account.</li>
+        <li><strong>Provide Contact Information:</strong> Enter your full name, organization (if applicable), phone number, country, and address.</li>
+        <li><strong>Add Payment Method:</strong> Input your credit card details. AWS uses this for billing but won't charge you until you incur costs.</li>
+        <li><strong>Verify Your Identity:</strong> Complete a phone verification step where AWS calls or texts you a code.</li>
+        <li><strong>Choose a Support Plan:</strong> Select from Basic (free), Developer, Business, or Enterprise plans.</li>
+        <li><strong>Complete Signup:</strong> Agree to the terms and submit. You'll then have access to the AWS Management Console.</li>
+      </ol>
+      <p>
+        Once signed up, explore the free tier, which includes 12 months of access to core services like EC2, S3, and more, to get started without costs.
+      </p>
+      <p class="source">
+        <a href="https://medium.com" target="_blank">medium.com</a> – How to Create an AWS account?
+      </p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
